@@ -1,0 +1,16 @@
+import json
+
+# Example data
+data = {
+    "apiKey": "AIzaSyDIWx9s4KJitMtUbb1opfbgEOUq6dQBO8o",
+    "authDomain": "whatsapp-chat-94f1d.firebaseapp.com",
+    "projectId": "whatsapp-chat-94f1d",
+    "storageBucket": "whatsapp-chat-94f1d.appspot.com",
+    "messagingSenderId": "905197962606",
+    "appId": "1:905197962606:web:2d9cc6276bffa5a10aed7f",
+    "measurementId": "G-F5Q1ND0YV1"
+}
+
+# Save data to a JSON file
+with open('firebaseConfig.json', 'w') as json_file:
+    json.dump(data, json_file, indent=4)
